@@ -3,5 +3,5 @@ CREATE TABLE usuario (
   nome VARCHAR(150) NOT NULL,
   cpf VARCHAR(11) NOT NULL UNIQUE,
   email VARCHAR(150) NOT NULL,
-  data_cadastro TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+  data_cadastro DATE
 );
