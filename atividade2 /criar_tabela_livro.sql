@@ -2,8 +2,8 @@ CREATE TABLE livro (
   id_livro INT PRIMARY KEY AUTO_INCREMENT,
   titulo VARCHAR(255) NOT NULL,
   sinopse TEXT,
-  ano_publicacao YEAR,
-  lido BOOLEAN,
-  data_cadastro TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-  data_atualizacao TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+  autor VARCHAR(128) NOT NULL,
+  editora VARCHAR(128) NOT NULL,
+  categoria VARCHAR(128),
+  ano_publicacao YEAR
 );
